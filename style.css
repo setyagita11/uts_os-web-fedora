@@ -1,0 +1,245 @@
+:root {
+  --bg: #f6fbff;
+  --nav: #1877bd;
+  --accent: #0b63a6;
+  --card: #ffffff;
+  --muted: #6b7280;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: #0b1420;
+  line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* JUDUL SECTION */
+h2 {
+  border-bottom: 2px solid var(--nav);
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* ===== HEADER ===== */
+.header-top {
+  background: linear-gradient(90deg, var(--nav), #1f8bd1);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.header-text h1 {
+  margin-bottom: 4px;
+  font-size: 22px;
+}
+
+.nim {
+  margin: 0;
+  font-weight: bold;
+}
+
+.sub {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: var(--nav);
+  text-align: center;
+  padding: 12px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ===== CONTENT ===== */
+.content {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: var(--card);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(11, 20, 32, 0.06);
+  margin-bottom: 25px;
+}
+
+/* ===== SEJARAH FEDORA ===== */
+.sejarah-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.sejarah-top figure {
+  flex: 1;
+  text-align: center;
+}
+
+.fedora-logo {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.sejarah-top figcaption {
+  font-weight: bold;
+  color: var(--nav);
+  margin-top: 6px;
+  font-size: 16px;
+}
+
+.sejarah-text {
+  flex: 2;
+  text-align: justify;
+}
+
+.sejarah-text p,
+.sejarah-bottom p {
+  text-indent: 30px;
+  line-height: 1.7;
+}
+
+.sejarah-bottom {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+/* ===== KEUNGGULAN & KEKURANGAN ===== */
+.procon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.procon > div {
+  flex: 1 1 220px;
+  background: #fbfeff;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #e9f2f9;
+}
+
+/* ===== DOWNLOAD ===== */
+.download-banner {
+  padding: 20px;
+  background: #eaf3ff;
+  border-left: 4px solid var(--nav);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.download-btn {
+  background-color: var(--nav);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  width: 280px;
+  margin: 12px auto 0;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* ===== INSTALL ===== */
+#install img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 15px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(24, 119, 189, 0.4);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+footer div:first-child {
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  .fedora-logo {
+    width: 100px;
+  }
+
+  .sejarah-top {
+    flex-direction: column;
+  }
+
+  .sejarah-text {
+    text-align: justify;
+  }
+
+  .download-btn {
+    width: 100%;
+  }
+}
